@@ -1,13 +1,17 @@
 const cell1 = document.getElementById(`1`)
 const button = document.getElementById(`button`)
 const timer = document.getElementById(`timer`)
+let clickDisplay = document.getElementById('click-display')
 let gameActive = false
 
 button.addEventListener(`click`, function () {
   let counter = 60
-  gameActive = true
-  intervalId = setInterval(intervalFunc, 1000)
-  moleGenerate()
+  if (gameActive === false) {
+    gameActive = true
+    intervalId = setInterval(intervalFunc, 1000)
+    moleGenerate()
+    clickCount()
+  }
 
   function intervalFunc() {
     counter -= 1
@@ -36,4 +40,15 @@ function moleGenerate() {
       }
     }, 500)
   }
+}
+
+function clickCount() {
+  clickCounter = 0
+  cell1.addEventListener('click', function () {
+    if (cell1.innerText === 'mole') {
+      clickCounter += 1
+      clickDisplay.innerText = clickCounter
+      console.log(clickCounter)
+    }
+  })
 }
