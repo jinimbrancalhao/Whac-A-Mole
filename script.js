@@ -1,4 +1,5 @@
 const cell1 = document.getElementById(`1`)
+const cell = document.querySelectorAll('.cell')
 const button = document.getElementById(`button`)
 const timer = document.getElementById(`timer`)
 let clickDisplay = document.getElementById('click-display')
@@ -27,7 +28,6 @@ button.addEventListener(`click`, function () {
 
 function moleGenerate() {
   if (gameActive === true) {
-    console.log(2)
     let moleInterval = setInterval(function () {
       generate = Math.floor(Math.random() * 6) + 1
       if (generate === parseInt(cell1.id)) {
@@ -41,6 +41,7 @@ function moleGenerate() {
     }, 500)
   }
 }
+// Mole generating
 
 function clickCount() {
   clickCounter = 0
@@ -52,3 +53,6 @@ function clickCount() {
     }
   })
 }
+//  added click counter
+
+console.log(cell)

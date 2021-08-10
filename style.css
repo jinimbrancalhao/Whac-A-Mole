@@ -1,9 +1,12 @@
 #container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .cell {
   border: 1px solid black;
   width: 25%;
   height: 100px;
+  display: flex;
 }
