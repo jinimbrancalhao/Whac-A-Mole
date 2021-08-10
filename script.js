@@ -66,6 +66,9 @@ function clickCount() {
         clickCounter += 1
         clickDisplay.innerText = clickCounter
         console.log(clickCounter)
+        cells[i].onclick = function moleRemove() {
+          cells[i].innerText = ' '
+        }
       }
     })
   }
@@ -74,3 +77,9 @@ function clickCount() {
 //  added click counter
 
 // make function to get rid of 'mole' and put tha inside clickcoutn and the molegenerate time
+
+// function moleRemove() {
+//   cells.forEach(cell => {
+//     cell.onclick = function
+//   });
+// }
