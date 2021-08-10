@@ -1,5 +1,10 @@
 const cell1 = document.getElementById(`1`)
-const cell = document.querySelectorAll('.cell')
+const cell2 = document.getElementById(`2`)
+const cell3 = document.getElementById(`3`)
+const cell4 = document.getElementById(`4`)
+const cell5 = document.getElementById(`5`)
+const cell6 = document.getElementById(`6`)
+let cells = document.getElementsByClassName('cell')
 const button = document.getElementById(`button`)
 const timer = document.getElementById(`timer`)
 let clickDisplay = document.getElementById('click-display')
@@ -30,11 +35,9 @@ function moleGenerate() {
   if (gameActive === true) {
     let moleInterval = setInterval(function () {
       generate = Math.floor(Math.random() * 6) + 1
-      if (generate === parseInt(cell1.id)) {
-        cell1.innerText = 'mole'
-      } else {
-        cell1.innerText = ' '
-      }
+      document.getElementById(`${generate}`).innerText = 'mole'
+      // document.getElementById(`${generate}`).innerText = ' '
+
       if (gameActive === false) {
         clearInterval(moleInterval)
       }
@@ -43,16 +46,31 @@ function moleGenerate() {
 }
 // Mole generating
 
+// function clickCount() {
+//   clickCounter = 0
+//   cell.addEventListener('click', function () {
+//     if (cell.innerText === 'mole') {
+//       clickCounter += 1
+//       clickDisplay.innerText = clickCounter
+//       console.log(clickCounter)
+//     }
+//   })
+// }
+
 function clickCount() {
   clickCounter = 0
-  cell1.addEventListener('click', function () {
-    if (cell1.innerText === 'mole') {
-      clickCounter += 1
-      clickDisplay.innerText = clickCounter
-      console.log(clickCounter)
-    }
-  })
+  for (let i = 0; i < cells.length; i++) {
+    clickCounter = 0
+    cells[i].addEventListener('click', function () {
+      if (cells[i].innerText === 'mole') {
+        clickCounter += 1
+        clickDisplay.innerText = clickCounter
+        console.log(clickCounter)
+      }
+    })
+  }
 }
+
 //  added click counter
 
-console.log(cell)
+// make function to get rid of 'mole' and put tha inside clickcoutn and the molegenerate time
