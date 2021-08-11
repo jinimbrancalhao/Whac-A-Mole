@@ -1,6 +1,59 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+body {
+  background-color: antiquewhite;
+}
+
+.title {
   text-align: center;
-  font-family: cursive;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 60px;
+  color: brown;
+}
+
+.content {
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+}
+
+p {
+  font-family: 'Rancho', cursive;
+  font-size: 25px;
+}
+
+.button {
+  text-align: center;
+}
+
+button {
+  border-radius: 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Rancho';
+  font-size: 25px;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 #container {
