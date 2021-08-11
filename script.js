@@ -13,6 +13,7 @@ let gameActive = false
 button.addEventListener(`click`, function () {
   let counter = 60
   if (gameActive === false) {
+    clickDisplay.innerText = 0
     gameActive = true
     intervalId = setInterval(intervalFunc, 1000)
     moleGenerate()
@@ -63,7 +64,6 @@ function clickCount() {
       if (cells[i].innerText === 'mole' && gameActive === true) {
         clickCounter += 1
         clickDisplay.innerText = clickCounter
-        console.log(clickCounter)
         cells[i].onclick = function moleRemove() {
           cells[i].innerText = ' '
         }
