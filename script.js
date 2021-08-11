@@ -34,35 +34,33 @@ button.addEventListener(`click`, function () {
 function moleGenerate() {
   if (gameActive === true) {
     let moleInterval = setInterval(function () {
+      moleTimeOut()
       generate = Math.floor(Math.random() * 6) + 1
       document.getElementById(`${generate}`).innerText = 'mole'
+      // setTimeout(function () {
+      //   cells.forEach((cell) => {
+      //     if (cell.innerText === 'mole') {
+      //       cell.innerText = ' '
+      // //       console.log('hello')
+      //     // }
+      //   })
+      // }, 1000)
       // document.getElementById(`${generate}`).innerText = ' '
 
       if (gameActive === false) {
         clearInterval(moleInterval)
       }
-    }, 500)
+    }, 700)
   }
 }
 // Mole generating
-
-// function clickCount() {
-//   clickCounter = 0
-//   cell.addEventListener('click', function () {
-//     if (cell.innerText === 'mole') {
-//       clickCounter += 1
-//       clickDisplay.innerText = clickCounter
-//       console.log(clickCounter)
-//     }
-//   })
-// }
 
 function clickCount() {
   clickCounter = 0
   for (let i = 0; i < cells.length; i++) {
     clickCounter = 0
     cells[i].addEventListener('click', function () {
-      if (cells[i].innerText === 'mole') {
+      if (cells[i].innerText === 'mole' && gameActive === true) {
         clickCounter += 1
         clickDisplay.innerText = clickCounter
         console.log(clickCounter)
@@ -76,10 +74,10 @@ function clickCount() {
 
 //  added click counter
 
-// make function to get rid of 'mole' and put tha inside clickcoutn and the molegenerate time
-
-// function moleRemove() {
-//   cells.forEach(cell => {
-//     cell.onclick = function
-//   });
-// }
+function moleTimeOut() {
+  for (let j = 0; j < cells.length; j++) {
+    if (cells[j].innerText === 'mole') {
+      cells[j].innerText = ' '
+    }
+  }
+}
