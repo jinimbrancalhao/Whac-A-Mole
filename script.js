@@ -26,7 +26,6 @@ button.addEventListener(`click`, function () {
     if (counter === 0) {
       clearInterval(intervalId)
       gameActive = false
-      console.log(gameActive)
     }
   }
 })
