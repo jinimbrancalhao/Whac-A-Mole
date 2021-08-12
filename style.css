@@ -35,7 +35,7 @@ p {
 button {
   border-radius: 20px;
   font-family: 'Rancho';
-  background-color: rgb(250, 199, 151);
+  background-color: rgb(192, 87, 68);
 }
 
 #button {
@@ -73,6 +73,7 @@ a:visited {
 }
 
 a:hover {
+  color: rgb(111, 191, 245);
   font-weight: bold;
 }
 
