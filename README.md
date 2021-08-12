@@ -26,7 +26,7 @@ This project will be accessible through Surge. The link in which this project ca
 [Whac-A-Mole](https://whacamolegame.surge.sh/)
 
 **_Screenshots_**
-
+![Game Board](images/gameboard.png)
 **_Future Updates_**
 
 - Firstly, I would like to change the design of the website to better convey a fun atmosphere. I believe adding things like animations or other dynamic website elements would help achieve this.

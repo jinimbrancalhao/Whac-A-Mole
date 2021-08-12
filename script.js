@@ -11,6 +11,7 @@ let clickDisplay = document.getElementById('click-display')
 let gameActive = false
 const mole = 'images/diglett.jpeg'
 const hill = 'images/mole-hill.png'
+
 const moleLength = button.addEventListener(`click`, function () {
   let counter = 60
   if (gameActive === false) {
@@ -30,7 +31,6 @@ const moleLength = button.addEventListener(`click`, function () {
     }
   }
 })
-// Start button and timer
 
 function moleGenerate() {
   if (gameActive === true) {
@@ -46,7 +46,6 @@ function moleGenerate() {
     }, randomInteger())
   }
 }
-// Mole generating
 
 function clickCount() {
   clickCounter = 0
@@ -66,8 +65,6 @@ function clickCount() {
     })
   }
 }
-
-//  added click counter
 
 function moleTimeOut() {
   for (let j = 0; j < cells.length; j++) {
