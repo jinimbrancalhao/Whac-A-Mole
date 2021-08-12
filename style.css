@@ -57,14 +57,17 @@ a:hover {
 }
 
 #container {
-  text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  height: 300px;
+  width: 55%;
 }
 
 .cell {
-  border: 1px solid black;
-  width: 25%;
-  height: 100px;
   display: flex;
+  justify-content: center;
+  border: solid 5px brown;
+  align-items: center;
 }

@@ -9,6 +9,8 @@ const button = document.getElementById(`button`)
 const timer = document.getElementById(`timer`)
 let clickDisplay = document.getElementById('click-display')
 let gameActive = false
+const mole =
+  'https://static.wikia.nocookie.net/sonicpokemon/images/b/bd/Diglett_AG_anime.png/revision/latest?cb=20130619041245'
 
 button.addEventListener(`click`, function () {
   let counter = 60
@@ -50,7 +52,7 @@ function moleGenerate() {
       if (gameActive === false) {
         clearInterval(moleInterval)
       }
-    }, 700)
+    }, 400)
   }
 }
 // Mole generating
