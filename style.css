@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
 body {
-  background-color: antiquewhite;
+  background-image: linear-gradient(to right, rgb(238, 207, 172), antiquewhite);
 }
 
 .title {
   text-align: center;
   font-family: 'Nanum Pen Script', cursive;
   font-size: 60px;
-  color: brown;
+  color: rgb(202, 82, 82);
 }
 
 .content {
