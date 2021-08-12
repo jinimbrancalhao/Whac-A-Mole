@@ -39,20 +39,10 @@ function moleGenerate() {
       moleTimeOut()
       generate = Math.floor(Math.random() * 6) + 1
       document.getElementById(`${generate}`).innerText = 'mole'
-      // setTimeout(function () {
-      //   cells.forEach((cell) => {
-      //     if (cell.innerText === 'mole') {
-      //       cell.innerText = ' '
-      // //       console.log('hello')
-      //     // }
-      //   })
-      // }, 1000)
-      // document.getElementById(`${generate}`).innerText = ' '
-
       if (gameActive === false) {
         clearInterval(moleInterval)
       }
-    }, 400)
+    }, 300)
   }
 }
 // Mole generating

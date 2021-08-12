@@ -33,6 +33,20 @@ p {
 
 button {
   border-radius: 20px;
+  font-family: 'Rancho';
+}
+
+#button {
+  font-size: 30px;
+}
+
+#button:hover {
+  font-weight: bold;
+}
+
+#click-display {
+  text-align: center;
+  font-size: 30px;
 }
 
 ul {
@@ -40,6 +54,10 @@ ul {
   list-style: none;
   justify-content: center;
   justify-content: space-around;
+}
+
+nav {
+  padding-bottom: 25px;
 }
 
 a {
@@ -70,4 +88,28 @@ a:hover {
   justify-content: center;
   border: solid 5px brown;
   align-items: center;
+  border-radius: 10px;
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#your-score {
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+#time {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+#timer {
+  margin-left: 10px;
 }
