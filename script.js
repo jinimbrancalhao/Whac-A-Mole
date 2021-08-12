@@ -75,7 +75,7 @@ function moleTimeOut() {
 }
 
 function randomInteger() {
-  min = Math.ceil(600)
-  max = Math.floor(200)
+  min = Math.ceil(1000)
+  max = Math.floor(300)
   return Math.floor(Math.random() * (max - min) + min)
 }

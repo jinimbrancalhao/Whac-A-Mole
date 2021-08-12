@@ -4,8 +4,7 @@
 
 ### By: Jin Im Brancalhao
 
-[GitHub](https://github.com/jinimbrancalhao) | [LinkedIn](https://www.linkedin.com/in/jin-im-826a6b215/) | [Instagram](https://www.instagram.com/jinnybphoto/) |
-[Trello](https://trello.com/b/W2Qa3IRb/whac-a-mole)
+[GitHub](https://github.com/jinimbrancalhao) | [LinkedIn](https://www.linkedin.com/in/jinimb/) | [Instagram](https://www.instagram.com/jinnybphoto/)
 
 ---
 
@@ -21,9 +20,10 @@ For this project, I will be making the game Whac-A-Mole. This game will feature 
 
 **_Getting Started_**
 
-This project will be accessible through Surge. The link in which this project can be accessed is below:
+This project will be accessible through Surge. The link in which this project can be accessed is below. A link to Trello, which was used for planning, is also below.
 
 [Whac-A-Mole](https://whacamolegame.surge.sh/)
+[Trello](https://trello.com/b/W2Qa3IRb/whac-a-mole)
 
 **_Screenshots_**
 ![Game Board](images/gameboard.png)
