@@ -9,8 +9,8 @@ const button = document.getElementById(`button`)
 const timer = document.getElementById(`timer`)
 let clickDisplay = document.getElementById('click-display')
 let gameActive = false
-const mole =
-  'https://static.wikia.nocookie.net/sonicpokemon/images/b/bd/Diglett_AG_anime.png/revision/latest?cb=20130619041245'
+const mole = 'images/diglett.jpeg'
+const hill = 'images/mole-hill.png'
 
 button.addEventListener(`click`, function () {
   let counter = 60
@@ -38,7 +38,9 @@ function moleGenerate() {
     let moleInterval = setInterval(function () {
       moleTimeOut()
       generate = Math.floor(Math.random() * 6) + 1
-      document.getElementById(`${generate}`).innerText = 'mole'
+      document
+        .getElementById(`${generate}`)
+        .firstChild.setAttribute('src', mole)
       if (gameActive === false) {
         clearInterval(moleInterval)
       }
@@ -52,11 +54,14 @@ function clickCount() {
   for (let i = 0; i < cells.length; i++) {
     clickCounter = 0
     cells[i].addEventListener('click', function () {
-      if (cells[i].innerText === 'mole' && gameActive === true) {
+      if (
+        cells[i].firstChild.getAttribute('src') === mole &&
+        gameActive === true
+      ) {
         clickCounter += 1
         clickDisplay.innerText = clickCounter
         cells[i].onclick = function moleRemove() {
-          cells[i].innerText = ' '
+          cells[i].firstChild.setAttribute('src', hill)
         }
       }
     })
@@ -67,8 +72,8 @@ function clickCount() {
 
 function moleTimeOut() {
   for (let j = 0; j < cells.length; j++) {
-    if (cells[j].innerText === 'mole') {
-      cells[j].innerText = ' '
+    if (cells[j].firstChild.getAttribute('src') === mole) {
+      cells[j].firstChild.setAttribute('src', hill)
     }
   }
 }

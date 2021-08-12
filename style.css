@@ -34,6 +34,7 @@ p {
 button {
   border-radius: 20px;
   font-family: 'Rancho';
+  background-color: rgb(250, 199, 151);
 }
 
 #button {
@@ -89,6 +90,7 @@ a:hover {
   border: solid 5px brown;
   align-items: center;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #score {
@@ -112,4 +114,14 @@ a:hover {
 
 #timer {
   margin-left: 10px;
+}
+
+#diglett-gif {
+  text-align: center;
+  margin: 20px;
+}
+
+img {
+  border-radius: 30px;
+  width: 40%;
 }
