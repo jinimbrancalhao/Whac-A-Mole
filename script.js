@@ -11,8 +11,7 @@ let clickDisplay = document.getElementById('click-display')
 let gameActive = false
 const mole = 'images/diglett.jpeg'
 const hill = 'images/mole-hill.png'
-
-button.addEventListener(`click`, function () {
+const moleLength = button.addEventListener(`click`, function () {
   let counter = 60
   if (gameActive === false) {
     clickDisplay.innerText = 0
@@ -44,7 +43,7 @@ function moleGenerate() {
       if (gameActive === false) {
         clearInterval(moleInterval)
       }
-    }, 300)
+    }, randomInteger())
   }
 }
 // Mole generating
@@ -76,4 +75,10 @@ function moleTimeOut() {
       cells[j].firstChild.setAttribute('src', hill)
     }
   }
+}
+
+function randomInteger() {
+  min = Math.ceil(600)
+  max = Math.floor(200)
+  return Math.floor(Math.random() * (max - min) + min)
 }
