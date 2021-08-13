@@ -22,7 +22,7 @@ For this project, I will be making the game Whac-A-Mole. This game will feature 
 
 This project will be accessible through Surge. The link in which this project can be accessed is below. A link to Trello, which was used for planning, is also below.
 
-[Whac-A-Mole](https://whacamolegame.surge.sh/)
+[Whac-A-Mole](https://whacamolegame.surge.sh/) |
 [Trello](https://trello.com/b/W2Qa3IRb/whac-a-mole)
 
 **_Screenshots_**
